@@ -16,9 +16,15 @@ body {
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     font-weight: 400;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* container */
@@ -43,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: flex-end;
 }
 
-.nav {
+.nav ul {
     display: grid;
     grid-template-columns: repeat(5, auto);
     grid-gap: 10px;
@@ -211,7 +217,8 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #ff8f1f;
 }
 
-.content_text {
+.content_text p {
+    margin: 1em 0;
     font-size: 1em;
 }
 
@@ -252,5 +259,4 @@ h1, h2, h3, h4, h5, h6 {
 
 .services_text {
     font-size: 1em;
-    margin: 0;
 }
